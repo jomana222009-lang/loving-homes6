@@ -1,0 +1,226 @@
+ <!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ابدأ الآن - Loving Homes</title>
+    <style>
+        /* إعدادات عامة */
+        body {
+            background-color: #f8fbff; /* لون خلفية هادئ وموحد */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #004a99;
+            direction: rtl;
+        }
+
+        /* القائمة العلوية */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 8%;
+            background: #ffffff;
+            border-bottom: 2px solid #eef2f6;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+        }
+
+        .logo { 
+            font-weight: bold; 
+            font-size: 26px; 
+            color: #004a99; 
+            text-decoration: none; 
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .nav-status {
+            color: #00acc1;
+            font-weight: bold;
+            font-size: 15px;
+            background: #e0f7f9;
+            padding: 6px 15px;
+            border-radius: 20px;
+        }
+
+        /* حاوية النموذج */
+        .form-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 60px 10%;
+            min-height: 85vh;
+        }
+
+        .booking-card {
+            background: #ffffff;
+            width: 100%;
+            max-width: 550px;
+            padding: 50px 40px;
+            border-radius: 40px;
+            box-shadow: 0 25px 60px rgba(0, 74, 153, 0.08);
+            text-align: center;
+            border-top: 12px solid #00acc1;
+            animation: slideUp 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+        }
+
+        @keyframes slideUp {
+            from { opacity: 0; transform: translateY(40px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .booking-card h1 {
+            font-size: 32px;
+            margin-bottom: 12px;
+            color: #004a99;
+            font-weight: 800;
+        }
+
+        .booking-card p {
+            color: #667;
+            margin-bottom: 35px;
+            font-size: 17px;
+            line-height: 1.6;
+        }
+
+        /* تنسيق المدخلات */
+        .form-group {
+            text-align: right;
+            margin-bottom: 22px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: 700;
+            font-size: 15px;
+            color: #004a99;
+            padding-right: 5px;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 16px 18px;
+            border: 2px solid #edf2f7;
+            border-radius: 18px;
+            font-size: 16px;
+            background-color: #fcfdfe;
+            color: #333;
+            transition: all 0.3s ease;
+            box-sizing: border-box;
+            font-family: inherit;
+        }
+
+        input:focus, select:focus {
+            border-color: #00acc1;
+            outline: none;
+            background-color: #fff;
+            box-shadow: 0 8px 20px rgba(0, 172, 193, 0.1);
+            transform: translateY(-2px);
+        }
+
+        /* زر الإرسال المطور */
+        .btn-submit {
+            background: linear-gradient(135deg, #00acc1, #008c9e);
+            color: white;
+            border: none;
+            padding: 18px;
+            width: 100%;
+            border-radius: 50px;
+            font-weight: 800;
+            font-size: 20px;
+            cursor: pointer;
+            transition: 0.4s;
+            margin-top: 20px;
+            box-shadow: 0 10px 25px rgba(0, 172, 193, 0.3);
+        }
+
+        .btn-submit:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 15px 35px rgba(0, 172, 193, 0.4);
+            filter: brightness(1.1);
+        }
+
+        .btn-back {
+            display: inline-block;
+            margin-top: 30px;
+            color: #00acc1;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        .btn-back:hover {
+            color: #004a99;
+            transform: translateX(5px);
+        }
+
+        /* تحسين للموبايل */
+        @media (max-width: 600px) {
+            .form-container { padding: 40px 5%; }
+            .booking-card { padding: 40px 25px; border-radius: 30px; }
+            .booking-card h1 { font-size: 28px; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <a href="index.html" class="logo">Loving Homes 🐾</a>
+        <div class="nav-status">نموذج الحجز المباشر</div>
+    </nav>
+
+    <div class="form-container">
+        <div class="booking-card">
+            <h1>ابدأ رحلة كينك 🐾</h1>
+            <p>يسعدنا انضمام أليفكم لعائلتنا، املأ البيانات وسنتواصل معكم فوراً.</p>
+
+            <form>
+                <div class="form-group">
+                    <label>اسم صاحب الكلب</label>
+                    <input type="text" placeholder="مثال: سارة العتيبي" required>
+                </div>
+
+                <div class="form-group">
+                    <label>اسم الكلب</label>
+                    <input type="text" placeholder="مثال: لوسي" required>
+                </div>
+
+                <div class="form-group">
+                    <label>نوع الخدمة المطلوبة</label>
+                    <select required>
+                        <option value="" disabled selected>-- اختر الحزمة المناسبة --</option>
+                        <option value="premium">الحزمة المميزة ⭐ (شاملة التصوير والوجبات)</option>
+                        <option value="classic">الحزمة الكلاسيكية 🐾 (رعاية نهارية كاملة)</option>
+                        <option value="daily">الحزمة اليومية ☀️ (للمشاوير السريعة)</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>تاريخ الحجز المفضل</label>
+                    <input type="date" required>
+                </div>
+
+                <button type="button" class="btn-submit" onclick="showSuccess()">
+                    تأكيد طلب الحجز الآن
+                </button>
+            </form>
+
+            <a href="index.html" class="btn-back">← العودة للرئيسية</a>
+        </div>
+    </div>
+
+    <script>
+        function showSuccess() {
+            alert('شكرًا لثقتكم! تم استلام طلب الحجز الخاص بـ (أليفكم) بنجاح. فريق Loving Homes سيتواصل معكم خلال دقائق لتأكيد الموعد.');
+        }
+    </script>
+
+</body>
+</html>

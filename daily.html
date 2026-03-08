@@ -1,0 +1,157 @@
+ <!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تفاصيل الباقة اليومية - Loving Homes</title>
+    <style>
+        :root {
+            /* اللون التيركوازي من صورك */
+            --cyan-color: #00acc1; 
+            --beige-bg: #fdf8f2;
+            --dark-blue: #004a99;
+        }
+
+        body {
+            background-color: var(--beige-bg);
+            font-family: 'Segoe UI', Tahoma, sans-serif;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            padding: 30px 15px;
+            color: var(--dark-blue);
+        }
+
+        .container {
+            background-color: white;
+            width: 100%;
+            max-width: 750px;
+            border-radius: 40px;
+            box-shadow: 0 15px 45px rgba(0, 172, 193, 0.1);
+            overflow: hidden;
+            /* شريط علوي تيركوازي */
+            border-top: 15px solid var(--cyan-color); 
+        }
+
+        .header-section {
+            padding: 50px 20px;
+            text-align: center;
+            background: linear-gradient(to bottom, #ffffff, #f9f3eb);
+        }
+
+        .header-section h1 { 
+            color: var(--cyan-color); 
+            font-size: clamp(28px, 5vw, 40px);
+            margin: 0;
+        }
+
+        .info-grid {
+            padding: 30px;
+        }
+
+        .feature-box {
+            background-color: #ffffff;
+            padding: 22px;
+            border-radius: 20px;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            border-right: 6px solid var(--cyan-color); 
+            font-size: 19px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.03);
+        }
+
+        .quiz-area {
+            padding: 40px;
+            background-color: #fcfcfc;
+            border-top: 2px dashed var(--cyan-color);
+        }
+
+        .quiz-title {
+            text-align: center;
+            color: var(--dark-blue);
+            margin-bottom: 30px;
+            font-size: 24px;
+        }
+
+        .q-card {
+            background: white;
+            padding: 18px;
+            border-radius: 15px;
+            margin-bottom: 12px;
+            border: 1px solid #eee;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .btn-main {
+            background-color: var(--cyan-color);
+            color: white;
+            padding: 16px 50px;
+            border-radius: 35px;
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-block;
+            font-size: 18px;
+            box-shadow: 0 8px 20px rgba(0, 172, 193, 0.3);
+        }
+
+        .footer {
+            text-align: center;
+            padding: 40px;
+        }
+
+        .back-link {
+            display: block;
+            margin-top: 20px;
+            color: #888;
+            text-decoration: none;
+            font-size: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="header-section">
+            <h1>☀️ تفاصيل الباقة اليومية</h1>
+            <p style="color: #a89379; margin-top: 10px;">مثالية للكلاب التي تحتاج لتفريغ طاقة خلال النهار</p>
+        </div>
+
+        <div class="info-grid">
+            <div class="feature-box">✅ 6 ساعات من اللعب الحر والمرح.</div>
+            <div class="feature-box">✅ إشراف كامل من مدربين متخصصين.</div>
+            <div class="feature-box">✅ وجبة خفيفة صحية ومغذية.</div>
+            <div class="feature-box">✅ إرسال صور وفيديوهات لأليفك خلال اليوم.</div>
+        </div>
+
+        <div class="quiz-area">
+            <h2 class="quiz-title">هل هذه الباقة مناسبة لك؟ 🤔</h2>
+            
+            <div class="q-card">
+                <span>هل يقضي كلبك وقتاً طويلاً بمفرده في المنزل؟</span>
+                <div class="options">
+                    <label><input type="radio" name="q1"> نعم</label>
+                    <label><input type="radio" name="q1"> لا</label>
+                </div>
+            </div>
+
+            <div class="q-card">
+                <span>هل يحتاج كلبك إلى مكان آمن للعب وتفريغ الطاقة؟</span>
+                <div class="options">
+                    <label><input type="radio" name="q2"> نعم</label>
+                    <label><input type="radio" name="q2"> لا</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <a href="booking.html" class="btn-main">احجز الباقة اليومية الآن</a>
+            <a href="index.html" class="back-link">← العودة للرئيسية</a>
+        </div>
+    </div>
+
+</body>
+</html>
