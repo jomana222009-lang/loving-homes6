@@ -1,0 +1,100 @@
+ <!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الحزمة الكلاسيكية - Loving Homes</title>
+    <style>
+        body { background-color: #f8fbff; font-family: 'Segoe UI', Tahoma, sans-serif; margin: 0; direction: rtl; color: #004a99; }
+        .navbar { display: flex; justify-content: space-between; padding: 15px 8%; background: #fff; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        .logo { font-weight: bold; font-size: 24px; text-decoration: none; color: #004a99; }
+        .details-container { display: flex; justify-content: center; padding: 40px 5%; }
+        
+        /* الكرت الرئيسي بستايل VIP ولون تركوازي */
+        .info-card { 
+            background: #fff; 
+            width: 100%; 
+            max-width: 600px; 
+            padding: 30px; 
+            border-radius: 40px; 
+            box-shadow: 0 15px 50px rgba(0,0,0,0.1); 
+            border-top: 12px solid #00acc1; 
+            text-align: center; 
+        }
+
+        .features-list { list-style: none; padding: 0; text-align: right; }
+        .features-list li { 
+            background: #fff; 
+            border-radius: 25px; 
+            margin-bottom: 30px; 
+            padding: 25px; 
+            border: 1px solid #eee; 
+            box-shadow: 0 5px 15px rgba(0,0,0,0.02);
+        }
+
+        .feature-title { font-size: 24px; font-weight: bold; color: #00acc1; display: block; margin-bottom: 10px; text-align: center; }
+        .feature-desc { color: #555; font-size: 16px; margin-bottom: 20px; line-height: 1.6; text-align: center; }
+
+        /* تنسيق الصور "وسط" لضمان ظهورها */
+        .img-container { 
+            width: 85%;           
+            height: auto;        
+            margin: 0 auto;       
+            border-radius: 20px; 
+            overflow: hidden; 
+            background-color: #f0f0f0; 
+        }
+        
+        .feature-img { 
+            width: 100%; 
+            height: auto; 
+            display: block; 
+            object-fit: cover; 
+        }
+
+        .btn-back { 
+            background: #00acc1; 
+            color: white; 
+            padding: 12px 50px; 
+            border-radius: 50px; 
+            text-decoration: none; 
+            font-weight: bold; 
+            display: inline-block; 
+            margin-top: 20px; 
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <a href="index.html" class="logo">Loving Homes 🐾</a>
+    </nav>
+
+    <div class="details-container">
+        <div class="info-card">
+            <h1>🐾 الحزمة الكلاسيكية</h1>
+            
+            <ul class="features-list">
+                <li>
+                    <span class="feature-title">🎾 جلسات لعب جماعية</span>
+                    <p class="feature-desc">ساعات من المرح واللعب مع أصدقاء جدد تحت إشراف فريقنا المختص.</p>
+                    <div class="img-container">
+                        <img src="image_fa4d1f.jpg" alt="لعب جماعي" class="feature-img">
+                    </div>
+                </li>
+
+                <li>
+                    <span class="feature-title">🏡 رعاية نهارية آمنة</span>
+                    <p class="feature-desc">بيئة نظيفة وآمنة تماماً تضمن راحة كلبك خلال ساعات النهار.</p>
+                    <div class="img-container">
+                        <img src="image_fa4ce2.jpg" alt="رعاية نهارية" class="feature-img">
+                    </div>
+                </li>
+            </ul>
+
+            <a href="index.html" class="btn-back">العودة للرئيسية</a>
+        </div>
+    </div>
+
+</body>
+</html>
